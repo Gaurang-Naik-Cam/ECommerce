@@ -16,6 +16,7 @@ namespace Ecommerce.Test
         public void Test1()
         {
             //Assign
+            //Since there is no input param for Index method. Param is not assigned.
 
             //Act
            var result = _homeController.Index();
