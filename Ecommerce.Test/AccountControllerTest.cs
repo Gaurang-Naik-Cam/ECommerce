@@ -33,7 +33,7 @@ namespace Ecommerce.Test
             Assert.IsTrue(result != null);
         }
 
-
+        [Test]
         public void Register()
         {
             MyEcommerceDbContext db = new MyEcommerceDbContext();
@@ -55,6 +55,7 @@ namespace Ecommerce.Test
             Assert.That(result, Is.EqualTo(testCustomer));
         }
 
+        [Test]
         public void Login()
         {
             MyEcommerceDbContext db = new MyEcommerceDbContext();

@@ -9,8 +9,17 @@ using System.Web.Mvc;
 
 namespace Ecommerce.Test
 {
-    internal class MyCartControllerTest
+    public class CheckOutControllerTest
     {
+
+        private CheckOutController _checkoutController { get; set; } = null;
+
+        [SetUp]
+        public void Setup()
+        {
+            _checkoutController = new CheckOutController();
+        }
+
         [Test]
         public void CheckOut()
         {
@@ -21,9 +30,9 @@ namespace Ecommerce.Test
             CheckoutDetails["LastName"] = "Customer";
             CheckoutDetails["Email"] = "TestCustomer1@email.com";
             CheckoutDetails["Mobile"] = "2491232712";
-            CheckoutDetails["Address"] = "199 Wonderland";
+            CheckoutDetails["Address"] = "199 Wonderland" ;
             CheckoutDetails["City"] = "Sudbury";
-            CheckoutDetails["PostCode"] = "P3A7Y3";
+            CheckoutDetails["PostCode"] ="P3A7Y3";
 
             _checkoutController.PlaceOrder(CheckoutDetails);
 

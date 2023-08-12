@@ -17,6 +17,8 @@ namespace Ecommerce.Test
         {
             _categoryController = new CategoryController();
         }
+
+        [Test]
         public void Create()
         {
             MyEcommerceDbContext db = new MyEcommerceDbContext();
