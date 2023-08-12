@@ -32,11 +32,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Web Project\\ECommerce\\MyEcommerceAdmin\\MyEcommerceAdmin.csproj": {
-                "projectPath": "D:\\Web Project\\ECommerce\\MyEcommerceAdmin\\MyEcommerceAdmin.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -73,6 +69,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.1.2, )"
@@ -96,21 +96,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "D:\\Web Project\\ECommerce\\MyEcommerceAdmin\\MyEcommerceAdmin.csproj": {
-      "restore": {
-        "projectUniqueName": "D:\\Web Project\\ECommerce\\MyEcommerceAdmin\\MyEcommerceAdmin.csproj",
-        "projectName": "MyEcommerceAdmin",
-        "projectPath": "D:\\Web Project\\ECommerce\\MyEcommerceAdmin\\MyEcommerceAdmin.csproj",
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net48": {}
       }
     }
   }

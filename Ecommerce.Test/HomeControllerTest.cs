@@ -1,4 +1,6 @@
 using MyEcommerceAdmin.Controllers;
+using System.Data.SqlClient;
+
 
 namespace Ecommerce.Test
 {
@@ -7,13 +9,14 @@ namespace Ecommerce.Test
         private HomeController _homeController { get; set; } = null;
 
         [SetUp]
+        
         public void Setup()
         {
             _homeController = new HomeController();
         }
 
         [Test]
-        public void Test1()
+        public void Index()
         {
             //Assign
             //Since there is no input param for Index method. Param is not assigned.
@@ -22,7 +25,7 @@ namespace Ecommerce.Test
            var result = _homeController.Index();
 
             //Assert
-            Assert.That(result != null);
+            Assert.IsNotNull(result);
         }
     }
 }

@@ -10,12 +10,22 @@
         "dependencies": {
           "Microsoft.AspNet.Mvc": "5.2.7",
           "Microsoft.NET.Test.Sdk": "17.3.2",
-          "MyEcommerceAdmin": "1.0.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
           "System.Configuration.ConfigurationManager": "7.0.0",
-          "coverlet.collector": "3.1.2"
+          "System.Data.SqlClient": "4.8.5",
+          "coverlet.collector": "3.1.2",
+          "Antlr3.Runtime": "3.5.0.2",
+          "CrystalDecisions.CrystalReports.Engine": "13.0.4000.0",
+          "CrystalDecisions.ReportSource": "13.0.4000.0",
+          "CrystalDecisions.Shared": "13.0.4000.0",
+          "EntityFramework": "6.0.0.0",
+          "EntityFramework.SqlServer": "6.0.0.0",
+          "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": "2.0.1.0",
+          "MyEcommerceAdmin": "1.0.0.0",
+          "PagedList": "1.17.0.0",
+          "WebGrease": "1.6.5135.21930"
         },
         "runtime": {
           "Ecommerce.Test.dll": {}
@@ -100,7 +110,7 @@
           "Microsoft.TestPlatform.TestHost": "17.3.2"
         }
       },
-      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.0.1": {},
       "Microsoft.TestPlatform.ObjectModel/17.3.2": {
         "dependencies": {
@@ -357,6 +367,12 @@
           }
         }
       },
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
       "Microsoft.Win32.SystemEvents/7.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -375,7 +391,7 @@
       },
       "NETStandard.Library/2.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0"
+          "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -431,9 +447,43 @@
       },
       "NUnit.Analyzers/3.3.0": {},
       "NUnit3TestAdapter/4.2.1": {},
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+        "dependencies": {
+          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        }
+      },
+      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/sni.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/sni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x86/native/sni.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
       "System.Collections/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -450,16 +500,43 @@
           }
         }
       },
+      "System.Data.SqlClient/4.8.5": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.6.1.5",
+            "fileVersion": "4.700.22.51706"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.5",
+            "fileVersion": "4.700.22.51706"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.5",
+            "fileVersion": "4.700.22.51706"
+          }
+        }
+      },
       "System.Diagnostics.Debug/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Diagnostics.Tools/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -504,14 +581,14 @@
       },
       "System.Globalization/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.IO/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11",
@@ -520,7 +597,7 @@
       },
       "System.IO.FileSystem/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.IO": "4.1.0",
           "System.IO.FileSystem.Primitives": "4.0.1",
@@ -576,7 +653,7 @@
       },
       "System.Reflection/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.IO": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
@@ -609,7 +686,7 @@
       },
       "System.Reflection.Extensions/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
@@ -618,7 +695,7 @@
       "System.Reflection.Metadata/1.6.0": {},
       "System.Reflection.Primitives/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -631,7 +708,7 @@
       },
       "System.Resources.ResourceManager/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Globalization": "4.0.11",
           "System.Reflection": "4.1.0",
@@ -640,27 +717,27 @@
       },
       "System.Runtime/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
       "System.Runtime.Extensions/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Runtime.Handles/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Runtime.InteropServices/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Reflection": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
@@ -672,6 +749,12 @@
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0"
+        }
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
         }
       },
       "System.Security.Cryptography.ProtectedData/7.0.0": {
@@ -701,16 +784,17 @@
           }
         }
       },
+      "System.Security.Principal.Windows/4.7.0": {},
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11"
@@ -734,7 +818,7 @@
       },
       "System.Threading.Tasks/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -800,22 +884,17 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "MyEcommerceAdmin/1.0.0": {
+      "Antlr3.Runtime/3.5.0.2": {
         "runtime": {
-          "MyEcommerceAdmin.dll": {}
+          "Antlr3.Runtime.dll": {
+            "assemblyVersion": "3.5.0.2",
+            "fileVersion": "3.5.0.2"
+          }
         }
       },
       "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
         "runtime": {
           "CrystalDecisions.CrystalReports.Engine.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.Shared/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.Shared.dll": {
             "assemblyVersion": "13.0.4000.0",
             "fileVersion": "13.0.26.3348"
           }
@@ -829,11 +908,43 @@
           }
         }
       },
+      "CrystalDecisions.Shared/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.Shared.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.26.3348"
+          }
+        }
+      },
       "EntityFramework/6.0.0.0": {
         "runtime": {
           "EntityFramework.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.400.420.21404"
+          }
+        }
+      },
+      "EntityFramework.SqlServer/6.0.0.0": {
+        "runtime": {
+          "EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          }
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.1.0": {
+        "runtime": {
+          "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.50905.0"
+          }
+        }
+      },
+      "MyEcommerceAdmin/1.0.0.0": {
+        "runtime": {
+          "MyEcommerceAdmin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -845,107 +956,11 @@
           }
         }
       },
-      "CrystalDecisions.ReportAppServer.DataDefModel/13.0.4000.0": {
+      "WebGrease/1.6.5135.21930": {
         "runtime": {
-          "CrystalDecisions.ReportAppServer.DataDefModel.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.ClientDoc/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.ClientDoc.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.ReportDefModel/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.ReportDefModel.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.Controllers/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.Controllers.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.CommLayer/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.CommLayer.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.DataSetConversion/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.DataSetConversion.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.Prompting/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.Prompting.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.XmlSerialize/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.XmlSerialize.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.CubeDefModel/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.CubeDefModel.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.CommonObjectModel/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.CommonObjectModel.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.ObjectFactory/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.ObjectFactory.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "CrystalDecisions.ReportAppServer.CommonControls/13.0.4000.0": {
-        "runtime": {
-          "CrystalDecisions.ReportAppServer.CommonControls.dll": {
-            "assemblyVersion": "13.0.4000.0",
-            "fileVersion": "13.0.26.3348"
-          }
-        }
-      },
-      "stdole/7.0.3300.0": {
-        "runtime": {
-          "stdole.dll": {
-            "assemblyVersion": "7.0.3300.0",
-            "fileVersion": "7.0.9466.1"
+          "WebGrease.dll": {
+            "assemblyVersion": "1.6.5135.21930",
+            "fileVersion": "1.6.5135.21930"
           }
         }
       }
@@ -1006,12 +1021,12 @@
       "path": "microsoft.net.test.sdk/17.3.2",
       "hashPath": "microsoft.net.test.sdk.17.3.2.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/1.1.0": {
+    "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
-      "path": "microsoft.netcore.platforms/1.1.0",
-      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.0.1": {
       "type": "package",
@@ -1040,6 +1055,13 @@
       "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
       "path": "microsoft.web.infrastructure/1.0.0",
       "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/7.0.0": {
       "type": "package",
@@ -1090,6 +1112,34 @@
       "path": "nunit3testadapter/4.2.1",
       "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
     },
+    "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
+      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
+      "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"
+    },
+    "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
+      "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
+      "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
+      "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
     "System.Collections/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -1103,6 +1153,13 @@
       "sha512": "sha512-WvRUdlL1lB0dTRZSs5XcQOd5q9MYNk90GkbmRmiCvRHThWiojkpGqWdmEDJdXyHbxG/BhE5hmVbMfRLXW9FJVA==",
       "path": "system.configuration.configurationmanager/7.0.0",
       "hashPath": "system.configuration.configurationmanager.7.0.0.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
+      "path": "system.data.sqlclient/4.8.5",
+      "hashPath": "system.data.sqlclient.4.8.5.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.0.11": {
       "type": "package",
@@ -1279,6 +1336,13 @@
       "path": "system.runtime.serialization.primitives/4.1.1",
       "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
     },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
     "System.Security.Cryptography.ProtectedData/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1292,6 +1356,13 @@
       "sha512": "sha512-Vmp0iRmCEno9BWiskOW5pxJ3d9n+jUqKxvX4GhLwFhnQaySZmBN2FuC0N5gjFHgyFMUjC5sfIJ8KZfoJwkcMmA==",
       "path": "system.security.permissions/7.0.0",
       "hashPath": "system.security.permissions.7.0.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.0.11": {
       "type": "package",
@@ -1356,17 +1427,12 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "MyEcommerceAdmin/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
+    "Antlr3.Runtime/3.5.0.2": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "CrystalDecisions.Shared/13.0.4000.0": {
+    "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -1376,7 +1442,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CrystalDecisions.Shared/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "EntityFramework/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityFramework.SqlServer/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyEcommerceAdmin/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -1386,67 +1472,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CrystalDecisions.ReportAppServer.DataDefModel/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.ClientDoc/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.ReportDefModel/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.Controllers/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.CommLayer/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.DataSetConversion/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.Prompting/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.XmlSerialize/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.CubeDefModel/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.CommonObjectModel/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.ObjectFactory/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CrystalDecisions.ReportAppServer.CommonControls/13.0.4000.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "stdole/7.0.3300.0": {
+    "WebGrease/1.6.5135.21930": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
