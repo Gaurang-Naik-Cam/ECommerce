@@ -11,7 +11,6 @@ namespace Ecommerce.Test
 {
     public class CheckOutControllerTest
     {
-
         private CheckOutController _checkoutController { get; set; } = null;
 
         [SetUp]

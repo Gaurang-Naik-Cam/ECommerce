@@ -9,8 +9,15 @@ using System.Web.Mvc;
 
 namespace Ecommerce.Test
 {
-    internal class MyCartControllerTest
+    public class MyCartControllerTest
     {
+        private CheckOutController _checkoutController { get; set; } = null;
+
+        [SetUp]
+        public void Setup()
+        {
+            _checkoutController = new CheckOutController();
+        }
         [Test]
         public void CheckOut()
         {
