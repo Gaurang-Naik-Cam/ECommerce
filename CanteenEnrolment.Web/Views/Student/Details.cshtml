@@ -1,0 +1,26 @@
+﻿@model CanteenEnrolment.Common.Student
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h2>Student Details</h2>
+
+    <div class="mb-3">
+        <label for="ID" class="form-label" asp-for="ID">Student ID</label>
+        <input type="text" class="form-control" id="IDInput"  asp-for="ID" disabled="disabled" />
+    </div>
+    <div class="mb-3">
+        <label for="FirstMidName" class="form-label" asp-for="FirstMidName">First Name</label>
+        <input type="text" class="form-control" id="FirstMidNameInput"  asp-for="FirstMidName" disabled="disabled" />
+        
+    </div>
+    <div class="mb-3">
+        <label for="LastName" class="form-label" asp-for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastNameInput"  asp-for="LastName" disabled="disabled" />
+      </div>
+      <div class="mb-3">
+        <label for="EnrollmentDate" class="form-label" asp-for="EnrollmentDate">Enrollment Date</label>
+        <input type="text" class="form-control" id="EnrollmentDateInput" asp-for="EnrollmentDate" disabled="disabled" />
+       
+    </div>
+

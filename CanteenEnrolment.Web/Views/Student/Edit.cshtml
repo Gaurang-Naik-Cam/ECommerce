@@ -1,0 +1,24 @@
+﻿@model CanteenEnrolment.Common.Student
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+
+<form asp-action="EditStudent" method="post">
+    <div class="mb-3">
+        <label for="ID" class="form-label" asp-for="ID">Student ID</label>
+        <input type="text" class="form-control" id="IdInput" asp-for="ID" disabled="disabled" />
+    </div>
+    <div class="mb-3">
+        <label for="FirstMidName" class="form-label" asp-for="FirstMidName">First Name</label>
+        <input type="text" class="form-control" id="FirstMidNameInput" placeholder="Enter First Name of Student" asp-for="FirstMidName" />
+        <span asp-validation-for="FirstMidName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="LastName" class="form-label" asp-for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastNameInput" placeholder="Enter Last Name of Student" asp-for="LastName" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Student</button>
+</form>

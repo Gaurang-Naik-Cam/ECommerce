@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenEnrolment.Web", "CanteenEnrolment.Web.csproj", "{AA50ED71-AB63-49C7-8963-C0CEA8366913}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenEnrolment.API", "..\CanteenEnrolment.API\CanteenEnrolment.API.csproj", "{2E62CF43-6F9F-44E4-9B08-5F78567CE3E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenEnrolment.Common", "..\CanteenEnrolment.Common\CanteenEnrolment.Common.csproj", "{8A3F6803-E657-4F84-A5A8-E3A5F9DFBD66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenEnrolment.IntegrationTests", "..\CanteenEnrolment.IntegrationTests\CanteenEnrolment.IntegrationTests.csproj", "{31F4340C-97EC-4F51-B3DC-279C7291827E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenEnrolment.UnitTests", "..\CanteenEnrolment.UnitTests\CanteenEnrolment.UnitTests.csproj", "{5FB42FA8-B0CC-48DF-BB5B-A0FC2B5A6294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA50ED71-AB63-49C7-8963-C0CEA8366913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA50ED71-AB63-49C7-8963-C0CEA8366913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA50ED71-AB63-49C7-8963-C0CEA8366913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA50ED71-AB63-49C7-8963-C0CEA8366913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E62CF43-6F9F-44E4-9B08-5F78567CE3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E62CF43-6F9F-44E4-9B08-5F78567CE3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E62CF43-6F9F-44E4-9B08-5F78567CE3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E62CF43-6F9F-44E4-9B08-5F78567CE3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3F6803-E657-4F84-A5A8-E3A5F9DFBD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3F6803-E657-4F84-A5A8-E3A5F9DFBD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3F6803-E657-4F84-A5A8-E3A5F9DFBD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3F6803-E657-4F84-A5A8-E3A5F9DFBD66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F4340C-97EC-4F51-B3DC-279C7291827E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F4340C-97EC-4F51-B3DC-279C7291827E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F4340C-97EC-4F51-B3DC-279C7291827E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F4340C-97EC-4F51-B3DC-279C7291827E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB42FA8-B0CC-48DF-BB5B-A0FC2B5A6294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB42FA8-B0CC-48DF-BB5B-A0FC2B5A6294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB42FA8-B0CC-48DF-BB5B-A0FC2B5A6294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB42FA8-B0CC-48DF-BB5B-A0FC2B5A6294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {078FCD06-3E98-45A6-8021-3DBD75E83DCD}
+	EndGlobalSection
+EndGlobal

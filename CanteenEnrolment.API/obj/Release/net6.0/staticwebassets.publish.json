@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cGNB5hxDucxklBTvdb0iPPuf5blDpgqMV1syhEa2fhc=",
+  "Source": "CanteenEnrolment.API",
+  "BasePath": "_content/CanteenEnrolment.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

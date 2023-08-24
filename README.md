@@ -1,1 +1,0 @@
-This project is submitted as final project for Advanced Web Development 

@@ -1,0 +1,25 @@
+﻿@model CanteenEnrolment.Common.Student
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label for="FirstMidName" class="form-label" asp-for="FirstMidName">First Name</label>
+        <input type="text" class="form-control" id="FirstMidNameInput" placeholder="Enter First Name of Student" asp-for="FirstMidName" />
+        <span asp-validation-for="FirstMidName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="LastName" class="form-label" asp-for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastNameInput" placeholder="Enter Last Name of Student" asp-for="LastName" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+  @*  <div class="mb-3">
+        <label for="EnrollmentDate" class="form-label" asp-for="EnrollmentDate">Enrollment Date</label>
+        <input type="text" class="form-control" id="EnrollmentDateInput" placeholder="Enrollment Date" asp-for="EnrollmentDate" />
+        <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
+    </div>*@
+
+    <button type="submit" class="btn btn-primary">Enroll Student</button>
+</form>

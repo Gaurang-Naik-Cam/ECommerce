@@ -1,0 +1,12 @@
+D:\Web Project\CanteenEnrolment.Common\bin\Debug\net6.0\CanteenEnrolment.Common.deps.json
+D:\Web Project\CanteenEnrolment.Common\bin\Debug\net6.0\CanteenEnrolment.Common.dll
+D:\Web Project\CanteenEnrolment.Common\bin\Debug\net6.0\CanteenEnrolment.Common.pdb
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.csproj.AssemblyReference.cache
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.AssemblyInfoInputs.cache
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.AssemblyInfo.cs
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.csproj.CoreCompileInputs.cache
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.dll
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\refint\CanteenEnrolment.Common.dll
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\CanteenEnrolment.Common.pdb
+D:\Web Project\CanteenEnrolment.Common\obj\Debug\net6.0\ref\CanteenEnrolment.Common.dll
